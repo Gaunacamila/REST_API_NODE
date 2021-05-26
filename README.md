@@ -1,5 +1,4 @@
 # REST_API_NODE 
 
-
-API _ Nodemon 
-      Express
+Use NodeJS para crear el servidor 
+Dependencias - MORGAN , Express , Nodemon 
