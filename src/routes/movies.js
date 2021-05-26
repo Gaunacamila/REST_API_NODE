@@ -10,14 +10,15 @@ router.get('/',(req,res) => {
 });
 
 router.post('/',(req,res)=> {
-    const { title,clasificación,año
+    const { Title,Director,year, raiting
     } = req.body;
-    if (title && clasificación && año) {
-        const newMovie = {...req.body}
-         movies.push();
+    if (Title && Director && year && raiting) {
+        const id = movies.length + 1;
+        const newMovie = {...req.body,id};
+         movies.push(newMovie);
+         res.json(movies);
     }else{ 
-        res.send('Wrong Request'); }
-    res.send('received');
+        res.send('ta mal'); }
 });
 
 module.exports = router;
